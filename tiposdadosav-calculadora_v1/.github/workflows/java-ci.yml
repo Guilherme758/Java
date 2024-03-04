@@ -1,0 +1,29 @@
+name: Executar testes
+
+on:
+  push:
+    branches:
+      - '*'
+  create:
+    branches:
+      - '*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+
+    - name: Build and Run Tests
+      run: |
+        javac -cp .:libs/junit-platform-console-standalone-1.7.2-all.jar src/br/calculadora/CalculadoraTests.java
+        java -jar libs/junit-platform-console-standalone-1.7.2-all.jar --class-path . --scan-class-path
