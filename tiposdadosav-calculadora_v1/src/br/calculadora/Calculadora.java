@@ -8,7 +8,7 @@ public class Calculadora{
 		else if(valor > 500) {
 			return valor - (int)(valor * 0.25);
 		}
-		else if(valor > 0) {
+		else if(valor >= 0) {
 			return valor - (int)(valor * 0.1);
 		}
 		else {
