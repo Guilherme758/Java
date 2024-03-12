@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+C:\Users\labunivas\eclipse-workspace\tiposdadosav-analisevendas\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2848007540.index
+1067094681.index
+895629719.index
+3959137331.index
+1302354861.index
+842497855.index

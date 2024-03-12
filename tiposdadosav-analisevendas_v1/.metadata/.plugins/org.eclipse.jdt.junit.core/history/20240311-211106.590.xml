@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AnaliseVendasTest" project="src" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="br.edu.univas.analisevendas.AnaliseVendasTest" time="0.008">
+    <testcase name="identificarMesMaiorVendas" classname="br.edu.univas.analisevendas.AnaliseVendasTest" time="0.001"/>
+    <testcase name="calcularTotalVendasProduto" classname="br.edu.univas.analisevendas.AnaliseVendasTest" time="0.0"/>
+    <testcase name="identificarProdutoMaisVendido" classname="br.edu.univas.analisevendas.AnaliseVendasTest" time="0.006"/>
+    <testcase name="identificarMesMenorVendas" classname="br.edu.univas.analisevendas.AnaliseVendasTest" time="0.001"/>
+    <testcase name="calcularMediaVendasMensais" classname="br.edu.univas.analisevendas.AnaliseVendasTest" time="0.0"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,46 @@
+package br.edu.univas.analisevendas;
+
+public class AnaliseVendas{
+	private int[][] _vendas;
+	
+	public AnaliseVendas(int vendas[][]) {
+		_vendas = vendas;
+	}
+	
+	public int calcularTotalVendasProduto(int produto) {
+		int[] vendasProduto = _vendas[produto];
+		int totalVendas = 0;
+		
+		for(int i = 0; i < 12; i++) {
+			totalVendas += vendasProduto[i];
+		}		
+		return totalVendas;
+	}
+	
+	public int identificarMesMaiorVendas() {
+		int maiorVendasMes = 0;
+		
+		for(int i = 0; i < 12; i++) {
+			int vendasMes = _vendas[0][i] + _vendas[1][i] + _vendas[2][i];
+			
+			if(vendasMes > maiorVendasMes) {
+				maiorVendasMes = vendasMes;
+			}
+			return maiorVendasMes;
+		}
+		
+		return 0;
+	}
+	
+	public int identificarMesMenorVendas() {
+		return 0;
+	}
+	
+	public double calcularMediaVendasMensais(int i) {
+		return 1.5;
+	}
+	
+	public int identificarProdutoMaisVendido() {
+		return 0;
+	}
+}

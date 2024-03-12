@@ -1,0 +1,19 @@
+package br.edu.univas.analisevendas;
+
+public class AnaliseVendas{
+	private int[][] _vendas;
+	
+	public AnaliseDeVendas(int vendas[][]) {
+		_vendas = vendas;
+	}
+	
+	public int calcularTotalVendasProduto(int produto) {
+		int[] vendasProduto = _vendas[produto];
+		int totalVendas = 0;
+		
+		for(int i = 0; i < 12; i++) {
+			totalVendas += vendasProduto[i];
+		}
+		return totalVendas;
+	}
+}
